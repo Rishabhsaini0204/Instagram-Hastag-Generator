@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Hashtag Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div id="heading">
+    <h1>Generate Instagram Hashtags</h1>
+    </div>
+
+    <div id="content">
+    <fieldset class="option">
+        <input type="radio" name="type" id="chkSetup"> 
+        <label for="chkSetup">Setup Shot</label>
+    </fieldset>
+    <fieldset class="option">
+        <input type="radio" name="type" id="chkPerson"> 
+        <label for="chkPerson">Setup + Person shot</label>
+    </fieldset>
+    <fieldset  class="option">
+        <input type="radio" name="type" id="chkInfo">
+        <label for="chkInfo">Info Gallery</label>
+    </fieldset>
+    <button id="btnGetHashtags" onclick="getAllHashtags()">Get Hashtags</button>
+        
+        <br><br>
+
+        <textarea id="result" cols="40" rows="10"></textarea>
+        <br>
+        <div id="count"></div>
+</div>
+    </main>   
+
+
+
+     
+<script src="app.js"></script>
+</body>
+</html>
